@@ -1,5 +1,6 @@
 //News API Call
 export const getNews = async (requestURL) => {
+  const container = document.querySelector(".container");
   container.innerHTML = "";
   let response = await fetch(requestURL);
   if (!response.ok) {
@@ -9,5 +10,7 @@ export const getNews = async (requestURL) => {
   let data = await response.json();
 
   console.log("-> " + data.articles);
-  generateUI(data.articles);
+
+  return data.articles;
+  // generateUI(data.articles);
 };

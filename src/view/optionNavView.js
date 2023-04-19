@@ -1,5 +1,5 @@
 import { apiKey, country } from "../config";
-import { getNews } from "../controller";
+import { updateUI } from "../helpers";
 
 const optionsContainer = document.querySelector(".options-container");
 
@@ -13,7 +13,7 @@ const selectCategory = (e, category) => {
   });
   let requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
   e.target.classList.add("active");
-  getNews(requestURL);
+  updateUI(requestURL);
 };
 
 //Options Buttons
