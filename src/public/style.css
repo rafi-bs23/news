@@ -22,9 +22,6 @@ img {
   width: 100%;
   text-align: center;
   box-shadow: 0 10px 50px 0 rgba(2, 0, 31, 0.3);
-
-  position: fixed;
-  z-index: 1;
 }
 .heading-container h4 {
   font-weight: 600;
@@ -32,12 +29,19 @@ img {
   letter-spacing: 5px;
 }
 .options-container {
-  margin: 10em 0 2em 0;
+  margin: 1em 0 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
   text-align: center;
+
+  box-shadow: 0 5px 05px 0 rgba(2, 0, 31, 0.3);
+  background-color: #d5d5d5;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
 }
 .option {
   background-color: #d5d5d5;
