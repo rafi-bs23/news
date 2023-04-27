@@ -5,8 +5,6 @@ const optionsContainer = document.querySelector(".options-container");
 
 //Category Selection
 const selectCategory = (e, category) => {
-  // console.log(e, category);
-
   let options = document.querySelectorAll(".option");
   options.forEach((element) => {
     element.classList.remove("active");

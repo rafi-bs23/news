@@ -1,5 +1,6 @@
 import { apiKey, country, options, generalURL } from "./config";
 import { createOptions, selectCategory } from "./view/optionNavView";
+import { searchQuery } from "./view/searchView";
 import { updateUI } from "./helpers";
 
 const optionsContainer = document.querySelector(".options-container");
@@ -11,6 +12,7 @@ const init = () => {
   optionsContainer.innerHTML = "";
   updateUI(generalURL);
   createOptions(options);
+  searchQuery();
 };
 
 init();
